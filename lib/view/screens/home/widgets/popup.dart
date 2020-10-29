@@ -54,6 +54,7 @@ class _PopupState extends State<Popup> {
                   child: InputField(
                     helperText: 'camera nickname',
                     controller: name,
+                    minLength: 1,
                   ),
                 ),
                 Padding(
@@ -61,6 +62,7 @@ class _PopupState extends State<Popup> {
                   child: InputField(
                     helperText: 'login',
                     controller: login,
+                    minLength: 5,
                   ),
                 ),
                 Padding(
@@ -68,6 +70,7 @@ class _PopupState extends State<Popup> {
                   child: InputField(
                     helperText: 'password',
                     controller: password,
+                    minLength: 5,
                   ),
                 ),
                 Padding(
@@ -75,6 +78,7 @@ class _PopupState extends State<Popup> {
                   child: InputField(
                     helperText: 'serial number',
                     controller: qrValue,
+                    minLength: 12,
                   ),
                 ),
               ],

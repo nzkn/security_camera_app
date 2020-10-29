@@ -25,7 +25,7 @@ class _InputFieldState extends State<InputField> {
         controller: widget.controller,
         obscureText: false,
         validator: (val) =>
-        val.length < widget.minLength ? 'This field can\'t contain less than ${widget.minLength} symbols' : null,
+        val.length < widget.minLength ? 'Enter at least ${widget.minLength} characters' : null,
         decoration: textInputDecoration.copyWith(
           helperText: widget.helperText,
         ),
